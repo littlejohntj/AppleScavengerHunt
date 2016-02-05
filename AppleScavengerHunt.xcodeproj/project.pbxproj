@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6168D3461C644E3F005FD026 /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B42B551C644B0800D4CCB8 /* ScavengerHuntItem.swift */; };
+		6168D3481C6461D6005FD026 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6168D3471C6461D6005FD026 /* ItemsManager.swift */; };
+		61B42B541C6430BC00D4CCB8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B42B531C6430BC00D4CCB8 /* ListViewController.swift */; };
 		61BC07361C641986007A6B3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC07351C641986007A6B3A /* AppDelegate.swift */; };
-		61BC07381C641986007A6B3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC07371C641986007A6B3A /* ViewController.swift */; };
+		61BC07381C641986007A6B3A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BC07371C641986007A6B3A /* AddViewController.swift */; };
 		61BC073B1C641986007A6B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BC07391C641986007A6B3A /* Main.storyboard */; };
 		61BC073D1C641986007A6B3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61BC073C1C641986007A6B3A /* Assets.xcassets */; };
 		61BC07401C641986007A6B3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BC073E1C641986007A6B3A /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6168D3471C6461D6005FD026 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		61B42B531C6430BC00D4CCB8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		61B42B551C644B0800D4CCB8 /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScavengerHuntItem.swift; path = AppleScavengerHuntTests/ScavengerHuntItem.swift; sourceTree = SOURCE_ROOT; };
 		61BC07321C641986007A6B3A /* AppleScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BC07351C641986007A6B3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		61BC07371C641986007A6B3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61BC07371C641986007A6B3A /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		61BC073A1C641986007A6B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61BC073C1C641986007A6B3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61BC073F1C641986007A6B3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,10 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				61BC07351C641986007A6B3A /* AppDelegate.swift */,
-				61BC07371C641986007A6B3A /* ViewController.swift */,
+				61BC07371C641986007A6B3A /* AddViewController.swift */,
 				61BC07391C641986007A6B3A /* Main.storyboard */,
-				61BC073C1C641986007A6B3A /* Assets.xcassets */,
+				61B42B531C6430BC00D4CCB8 /* ListViewController.swift */,
+				61B42B551C644B0800D4CCB8 /* ScavengerHuntItem.swift */,
+				6168D3471C6461D6005FD026 /* ItemsManager.swift */,
 				61BC073E1C641986007A6B3A /* LaunchScreen.storyboard */,
+				61BC073C1C641986007A6B3A /* Assets.xcassets */,
 				61BC07411C641986007A6B3A /* Info.plist */,
 			);
 			path = AppleScavengerHunt;
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61BC07381C641986007A6B3A /* ViewController.swift in Sources */,
+				61BC07381C641986007A6B3A /* AddViewController.swift in Sources */,
+				61B42B541C6430BC00D4CCB8 /* ListViewController.swift in Sources */,
+				6168D3461C644E3F005FD026 /* ScavengerHuntItem.swift in Sources */,
 				61BC07361C641986007A6B3A /* AppDelegate.swift in Sources */,
+				6168D3481C6461D6005FD026 /* ItemsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MonicSoftware.AppleScavengerHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -412,6 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MonicSoftware.AppleScavengerHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -482,6 +496,7 @@
 				61BC075C1C641986007A6B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61BC075D1C641986007A6B3A /* Build configuration list for PBXNativeTarget "AppleScavengerHuntTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +505,7 @@
 				61BC075F1C641986007A6B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61BC07601C641986007A6B3A /* Build configuration list for PBXNativeTarget "AppleScavengerHuntUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +514,7 @@
 				61BC07621C641986007A6B3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
